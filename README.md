@@ -1,20 +1,17 @@
-# JanusWsExample
+# Janus WebRTC Example with Phoenix and WebSockets!
 
-To start your Phoenix server:
+To start your Janus and Phoenix servers:
 
   * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.setup`
-  * Install Node.js dependencies with `cd assets && npm install`
+  * Install Node.js dependencies with `cd assets && yarn`
+  * Start Janus via docker with `docker-compose up`
   * Start Phoenix endpoint with `mix phx.server`
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+## Learn more about Janus
 
-## Learn more
-
-  * Official website: http://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Mailing list: http://groups.google.com/group/phoenix-talk
-  * Source: https://github.com/phoenixframework/phoenix
+  * Official website: https://janus.conf.meetecho.com/
+  * Docs: https://janus.conf.meetecho.com/docs/
+  * Mailing list: https://groups.google.com/forum/#!forum/meetecho-janus
+  * Source: https://github.com/meetecho/janus-gateway
