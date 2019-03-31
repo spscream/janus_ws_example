@@ -8,11 +8,3 @@ config :janus_ws_example, JanusWsExampleWeb.Endpoint,
 
 # Print only warnings and errors during test
 config :logger, level: :warn
-
-# Configure your database
-config :janus_ws_example, JanusWsExample.Repo,
-  username: "postgres",
-  password: "postgres",
-  database: "janus_ws_example_test",
-  hostname: "localhost",
-  pool: Ecto.Adapters.SQL.Sandbox

@@ -24,14 +24,4 @@ defmodule JanusWsExampleWeb.ChannelCase do
       @endpoint JanusWsExampleWeb.Endpoint
     end
   end
-
-  setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(JanusWsExample.Repo)
-
-    unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(JanusWsExample.Repo, {:shared, self()})
-    end
-
-    :ok
-  end
 end

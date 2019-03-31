@@ -7,9 +7,6 @@
 # General application configuration
 use Mix.Config
 
-config :janus_ws_example,
-  ecto_repos: [JanusWsExample.Repo]
-
 # Configures the endpoint
 config :janus_ws_example, JanusWsExampleWeb.Endpoint,
   url: [host: "localhost"],

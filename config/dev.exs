@@ -65,11 +65,3 @@ config :phoenix, :stacktrace_depth, 20
 
 # Initialize plugs at runtime for faster development compilation
 config :phoenix, :plug_init_mode, :runtime
-
-# Configure your database
-config :janus_ws_example, JanusWsExample.Repo,
-  username: "postgres",
-  password: "postgres",
-  database: "janus_ws_example_dev",
-  hostname: "localhost",
-  pool_size: 10
