@@ -125,9 +125,8 @@ defmodule JanusEx.Room do
     {:noreply, state}
   end
 
-  # TODO {:janus_ws, msg} = janus_msg
   def handle_info(
-        %{"transaction" => tx_id} = msg,
+        {:janus_ws, %{"transaction" => tx_id} = msg},
         %__MODULE__{name: name, txs: txs, session_id: session_id, handle_id: handle_id} = state
       ) do
     state =
@@ -203,7 +202,7 @@ defmodule JanusEx.Room do
     {:noreply, state}
   end
 
-  def handle_info(%{"janus" => "event"} = msg, state) do
+  def handle_info({:janus_ws, %{"janus" => "event"} = msg}, state) do
     IO.inspect(msg, label: "unexpected event message in room")
     {:noreply, state}
   end

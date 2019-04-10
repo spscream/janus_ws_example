@@ -80,8 +80,7 @@ defmodule Web.RoomChannel do
     {:noreply, socket}
   end
 
-  # TODO msg = {:janus_ws, ...}
-  def handle_info(msg, socket) do
+  def handle_info({:janus_ws, msg}, socket) do
     socket = handle_janus_msg(msg, socket)
     {:noreply, socket}
   end
